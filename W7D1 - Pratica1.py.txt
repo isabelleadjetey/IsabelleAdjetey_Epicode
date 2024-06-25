@@ -1,0 +1,16 @@
+Definizione della funzione che prende in ingresso una lista  di stringhe e ritorna una lista contenente la lunghezza di ogni stringa d>
+def listElementLen(myList):
+ myListElementLength = []
+ for x in range(len(myList)):
+   myListElementLength.append(len(myList[x]))
+ return myListElementLength
+
+
+# Defeinisco una lista A  di 3 Elementi 
+A = ["test", "Pratica", "Progetto"]
+# Assegno il valore di ritorno della chiamata della funzione listElementLen con valore di ingresso la lista A
+B = listElementLen(A) 
+for x in range(len(B)):
+  # Stampa dei valori di B
+   print (B[x])
+
